@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@700&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;1,100&display=swap');
+
+* {
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    text-align: center;
+}
+body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2cm;
+}
+h1 {
+ font-weight: 700;
+ margin-top: 1cm;
+}
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.755);
+    padding: 1cm 0cm;
+}
+h3 {
+    background-color: hsl(248, 32%, 49%);
+    padding: 1cm 3cm;
+    border-radius: 10px;
+    font-size: 1.2cm;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.755);
+    box-shadow: 0cm 0.5cm 0cm rgba(0, 0, 0, 0.131);
+}
+
+span {
+    font-weight: 600;
+    color: white;
+}
+.card {
+    background-color: white;
+    margin-top: 1.5cm;
+    padding: 2cm;
+    border-radius: 10px;
+    box-shadow: 0cm 0.5cm 0cm rgba(0, 0, 0, 0.124);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1cm;
+    position: relative;
+}
+input {
+    width: 100%;
+    padding: 1cm;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    color: hsl(246, 25%, 77%);
+    font-weight: 200;
+}
+.input-div {
+    width: 100%;
+}
+
+#submit-btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    padding: 1cm 0cm;
+    font-size: 1cm;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0cm .2cm 0cm rgb(46, 167, 114);
+}
+p{
+    color: hsl(246, 25%, 77%);
+    font-size: .6cm;
+    padding: 1cm 1cm 0;
+}
+p a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-size: 200;
+}
+.icon {
+    position: absolute;
+    margin: 0.5cm 0cm 0cm -3cm;
+    opacity: 0;
+}
+.msg {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    padding: 0.5cm 0cm 0cm 0cm;
+    text-align: end;
+    display: none;
+}
+
+.attribution {
+    color: white;
+}
+.attribution a {
+    color: hsl(248, 32%, 49%);
+}
+
+/* error states*/
+.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error input:focus {
+    color: hsl(0, 100%, 74%);
+}
+
+.error .icon{
+    opacity: 1;
+}
+.error .msg {
+    display: block;
+}
